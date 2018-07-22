@@ -1,11 +1,11 @@
 /**************************************************************************************
 *	Name		:Radar Project top
-*	Important	:Only transport data from FMCW radar'S ADC to PC.
-*				 2d fft 256*256 points
-*				 T = 1ms;Fs = 300KHz 
+*	Important	:Only transport data from FMCW radar's ADC to PC.
+*			 2d fft 256*256 points
+*			 T = 1ms;Fs = 300KHz 
 *	Origin		:171122
-*				 171201
-*	Author		:Helrori2011@gmail.com
+*			 171201
+*	Author		:helrori2011@gmail.com
 ***************************************************************************************/
 module Radar_Project_top
 (
@@ -29,15 +29,15 @@ module Radar_Project_top
 	output	CY_IFCLK,
 	output	CY_tell_cy_ifclk_is_OK,
 	
-	output GND0,
-    output GND1,
-    output GND2,
-    output GND3
+        output GND0,
+        output GND1,
+        output GND2,
+        output GND3
 );
 `define EP2_NOTHING     		(CY_FLAGA==1'd0)
 `define EP6_FULL       		 	(CY_FLAGB==1'd0)
 `define FFT1D_LENGTH      		256
-`define ADC_VALUE_CHANNEL_CNT	4
+`define ADC_VALUE_CHANNEL_CNT	        4
 wire clk_48M,clk_48M_180,clk_50M,clk_200M,rst_n;
 wire [9:0] used_0,used_1;
 reg [17:0]Time_Cnt_II;
@@ -49,7 +49,7 @@ assign GND1 = 1'b0;
 assign GND2 = 1'b0;
 assign GND3 = 1'b0;
 initial begin
-	Time_Cnt 			= 32'd0;
+	Time_Cnt 		= 32'd0;
 	Time_Cnt_II 		= 18'd0;
 end
 clk_wiz_0 clk_wiz_0_U1
