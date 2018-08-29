@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-#   Name        :radar lib for get data and sample test the device
+#   Name        :radar lib for get data and simple test the device
 #   Origin      :171204
 #   Author      :helrori
 #
